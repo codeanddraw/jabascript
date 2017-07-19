@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Finger Guessing </title>
+<style>
+body{
+background-color:#e68c4c;
+
+}
+
+h1{
+border:grove;
+background-color:black;
+color:white;
+font-size:50px;
+padding:40px;
+}
+</style>
+
+</head>
+<body>
+<center>
+<h1>Finger Guessing Game</h1>
+<p>
+<!--users guess-->
+
+<select id="myNum">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+<button id="guess">Guess U computer!</button>
+
+</p>
+
+<script>
+document.getElementById("guess").onclick=function(){
+
+	var myNumber = document.getElementById("myNum").value;
+	var gotIt= false;
+	var numberOfGuesses = 1;
+	while(gotIt == false){
+	//computer's guess by using random number generator
+	var guess = Math.floor(Math.random()* 6);
+    if(guess == myNumber){
+		gotIt = true;
+		document.write("You guessed it right");
+		alert("Computer says: Oo Boy! It took me "+numberOfGuesses+" number of guesses to get "+ guess);
+	}else{
+	numberOfGuesses = numberOfGuesses + 1;
+	}	}
+}
+
+</script>
+<h1>How many fingers am I holding up?</h1>
+<input type="text" id="textbox1">
+<button id="guess1">Guess Now!</button>
+<script>
+document.getElementById("guess1").onclick=function(){
+//fetching the value entered in the text box
+	var textval = document.getElementById("textbox1").value;
+	//creating a random number 
+	var compNum = Math.floor(Math.random()*6);
+	//comparing the number with the value entered in the text box
+	if(compNum == textval){
+		alert("Well done! You got it");
+	}else{
+		alert("Trut me you can't");
+	}
+
+}
+</script>
+<hr>
+<img src="images.jpg" height="700" width="700">
+</center>
+</body>
+
+</html>
