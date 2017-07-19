@@ -1,2 +1,2 @@
-# jabascript
+# javascript
 My_Music_Box 
