@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Disappearing circles</title>
+<style>
+body{
+background-color:black;
+
+}
+
+.circle{
+width:100px;
+height:100px;
+border-radius:50px;
+float:left;
+border:dotted;
+margin-right:50px;
+                
+}
+#red-circle{
+background-color:red;
+}
+#yellow-circle{
+background-color:yellow;
+}
+#pink-circle{
+background-color:pink;
+}
+#green-circle{
+background-color:green;
+}
+#blue-circle{
+background-color:blue;
+}
+#cyan-circle{
+background-color:cyan;
+}
+
+h1{
+color:white;
+border:dotted;
+background-color:#ff787A;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<h1> Disappearing Circles</h1>
+<div class="circle" id="red-circle"></div>
+
+<div class="circle" id="yellow-circle"></div>
+
+<div class="circle" id="pink-circle"></div>
+
+<div class="circle" id="green-circle"></div>
+
+<div class="circle" id="blue-circle"></div>
+
+<div class="circle" id="cyan-circle"></div>
+
+
+<script>
+document.getElementById("red-circle").onclick= function(){
+	document.getElementById("red-circle").style.display="none";
+}
+
+document.getElementById("yellow-circle").onclick= function(){
+ document.getElementById("yellow-circle").style.display="none";
+}
+
+</script>
+
+</body>
+
+</html>
